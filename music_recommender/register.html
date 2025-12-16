@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISAI | Register</title>
+<link rel="stylesheet" href="./css/style.css">
+<style>
+.register-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: #16161a;
+  border-radius: 16px;
+  padding: 30px 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #5eead4;
+  font-weight: 600;
+}
+.register-container form {
+  display: flex;
+  flex-direction: column;
+}
+.register-container input {
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #2a2a2f;
+  background: #0f0f12;
+  color: #fff;
+}
+.register-container button {
+  background: linear-gradient(90deg, #5eead4, #3b82f6);
+  color: #0f0f12;
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.register-container button:hover {
+  background: linear-gradient(90deg, #3b82f6, #5eead4);
+}
+.register-container p {
+  text-align: center;
+  color: #b8b8c0;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.register-container a {
+  color: #5eead4;
+  text-decoration: none;
+}
+.register-container a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 480px) {
+  .register-container {
+    margin: 40px 16px;
+    padding: 24px 18px;
+  }
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <header><center>
+    <h1>🎶 ISAI</h1>
+    <p>Your Personalized Music Experience</p>
+  </header></center>
+
+  <div class="register-container">
+    <h2>Create Account</h2>
+    <form action="php/register.php" method="POST">
+      <input type="text" name="username" placeholder="Enter Username" required>
+      <input type="email" name="email" placeholder="Enter Email" required>
+      <input type="password" name="password" placeholder="Enter Password" required>
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+<center>
+  <footer>
+    <p>© 2025 ISAI | Powered by Spotify API</p>
+  </footer></center>
+</div>
+</body>
+</html>

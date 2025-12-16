@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Spotify Live Search</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>🎵 Spotify Dynamic Music Recommender</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="favorites.php">Favorites</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="search-row">
+      <input id="searchInput" type="text" placeholder="Search for songs, artists or albums..." autofocus>
+      <button id="clearBtn">Clear</button>
+    </div>
+
+    <div id="results" class="song-grid"></div>
+  </main>
+
+  <script src="js/spotify.js"></script>
+</body>
+</html>

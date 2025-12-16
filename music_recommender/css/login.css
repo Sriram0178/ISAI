@@ -1,0 +1,21 @@
+*{box-sizing:border-box;font-family:Inter,Segoe UI,system-ui,Roboto,Arial,sans-serif}
+body{margin:0;background:linear-gradient(180deg,#0f0f10,#141218);color:#e9ecef;min-height:100vh}
+.app{max-width:900px;margin:40px auto;padding:20px}
+header h1{margin:0;font-size:34px;letter-spacing:1px}
+header p{color:#b8b8c0;margin-top:6px}
+.cards{display:flex;gap:16px;margin-top:24px}
+.card{background:#16161a;border-radius:12px;padding:20px;display:block;text-decoration:none;color:inherit;min-width:150px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,0.5)}
+.container{max-width:980px;margin:20px auto;padding:16px}
+.card h2{margin:0 0 12px 0}
+input,button{display:block;width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid #2a2a2f;background:#0f0f12;color:#fff}
+button{cursor:pointer}
+.topbar{display:flex;justify-content:space-between;padding:18px 24px;background:#0b0b0d;border-bottom:1px solid rgba(255,255,255,0.04)}
+.search .results{display:flex;flex-direction:column;gap:12px;margin-top:12px}
+.track{display:flex;gap:12px;background:#0d0d0f;padding:12px;border-radius:10px;align-items:center}
+.track img{width:64px;height:64px;object-fit:cover;border-radius:6px}
+.track .meta{flex:1}
+.saved-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.saved-list li{display:flex;gap:10px;align-items:center;background:#0d0d0f;padding:10px;border-radius:8px}
+.error{color:#ff6b6b}
+.success{color:#5eead4}
+footer{margin-top:30px;color:#9a9a9a}
